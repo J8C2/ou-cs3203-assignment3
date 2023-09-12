@@ -23,8 +23,24 @@ int multiply(vector<int> second)
     return total;
 }
 
-int main()
+int main() // max of 5 values for each vector
 { 
-
+    int MAX = 10;
+    int temp = 0;
+    vector<int> first;
+    vector<int> second;
+    for (int i = 0; i < MAX; ++i)
+    { 
+        cin >> temp;
+        first.at(temp);
+    }
+     for (int i = 0; i < MAX; ++i)
+    { 
+        cin >> temp;
+        second.at(temp);
+    }
+    
+    add(first);
+    multiply(second);
     return 0;
 }
