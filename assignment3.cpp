@@ -56,8 +56,17 @@ int main() // max of 5 values for each vector
         cin >> temp;
         third.at(temp);
     }
-    
+    vector<int> reversal = reverse(third);
+
+
     cout << add(first);
+    cout << endl;
     cout << multiply(second);
+    cout << endl;
+    for (int i = 0; i < reversal.size(); ++i)
+    { 
+       cout << reversal.at(i);
+    }
+    cout << endl;
     return 0;
 }
